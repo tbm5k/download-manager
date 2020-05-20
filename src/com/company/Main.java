@@ -12,12 +12,13 @@ public class Main {
     private static File fileName;
 
     //Folder paths
-    private static final String path = "C:\\Users\\Admin\\Downloads";
-    private static final String imageDes = "C:\\Users\\Admin\\Desktop\\Project\\Back-End\\Download-Manger-Test\\Images\\";
-    private static final String videosDes = "C:\\Users\\Admin\\Desktop\\Project\\Back-End\\Download-Manger-Test\\Videos\\";
-    private static final String zippedDes = "C:\\Users\\Admin\\Desktop\\Project\\Back-End\\Download-Manger-Test\\Zipped\\";
-    private static final String docsDes = "C:\\Users\\Admin\\Desktop\\Project\\Back-End\\Download-Manger-Test\\Docs\\";
-    private static final String undefDes = "C:\\Users\\Admin\\Desktop\\Project\\Back-End\\Download-Manger-Test\\Undefined\\";
+    private static final String path = "C:\\Users\\tbm5k\\Downloads";
+    private static final String imageDes = "C:\\Users\\tbm5k\\Desktop\\Download-Manger-Sorted\\Images\\";
+    private static final String videosDes = "C:\\Users\\tbm5k\\Desktop\\Download-Manger-Sorted\\Videos\\";
+    private static final String zippedDes = "C:\\Users\\tbm5k\\Desktop\\Download-Manger-Sorted\\Zipped\\";
+    private static final String docsDes = "C:\\Users\\tbm5k\\Desktop\\Download-Manger-Sorted\\Docs\\";
+    private static final String undefDes = "C:\\Users\\tbm5k\\Desktop\\Download-Manger-Sorted\\Undefined\\";
+    private static final String musicDes = "C:\\Users\\tbm5k\\Desktop\\Download-Manger-Sorted\\Music\\";
 
     public static void main(String[] args) throws IOException {
 
@@ -114,6 +115,7 @@ public class Main {
                     break;
 
                 case "text/plain":
+                case "application/pdf":
                     aFile = new File(String.valueOf(fileName));
 
                     if (aFile.renameTo(new File(docsDes + aFile.getName()))) {
@@ -127,6 +129,15 @@ public class Main {
                     aFile = new File(String.valueOf(fileName));
 
                     if (aFile.renameTo(new File(imageDes + aFile.getName()))) {
+                        System.out.println("File is moved successful!");
+                    }
+
+                    break;
+
+                case "audio/mpeg":
+                    aFile = new File(String.valueOf(fileName));
+
+                    if (aFile.renameTo(new File(musicDes + aFile.getName()))) {
                         System.out.println("File is moved successful!");
                     }
 
