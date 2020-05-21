@@ -87,4 +87,4 @@ If you want to contact me you can reach me at:
 
 ## License 📝
 
-This project uses the following license: [<license_name>](<link>).
+This project uses the following license: [<MIT>](<https://github.com/tbm5k/download-manager/LICENSE>).
