@@ -6,13 +6,13 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Objects;
 
-public class Main {
+public class DownloadsManager {
 
     private static File[] content;
     private static File fileName;
 
     //Folder paths
-    private static final String path = "C:\\Users\\tbm5k\\Downloads";
+    private static final String downloadsPath = "C:\\Users\\tbm5k\\Downloads";
     private static final String imageDes = "C:\\Users\\tbm5k\\Desktop\\Download-Manger-Sorted\\Images\\";
     private static final String videosDes = "C:\\Users\\tbm5k\\Desktop\\Download-Manger-Sorted\\Videos\\";
     private static final String zippedDes = "C:\\Users\\tbm5k\\Desktop\\Download-Manger-Sorted\\Zipped\\";
@@ -29,7 +29,7 @@ public class Main {
 
         while (true) {
             //Opening the downloads folder and listing all the downloads available
-            File directory = new File(path);
+            File directory = new File(downloadsPath);
             content = directory.listFiles();
 
             assert content != null;
