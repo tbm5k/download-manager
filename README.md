@@ -32,12 +32,12 @@ Windows:
 1. Creat a folder i.e ```c:\Desktop\Sorted``` in you pc where you woul like your donwloads to 
    be saved in.
 2. Inside the ```Sorted``` folder, create 6 new folders: 
-* Images
-* Videos
-* Zipped
-* Docs
-* Undefined
-* Music
+ * Images
+ * Videos
+ * Zipped
+ * Docs
+ * Undefined
+ * Music
 3. Open the project from you IDE.
 4. Change folder paths variable values according to the folders you created from the above procedure.
 5. Run the program 
@@ -48,12 +48,12 @@ Linux, macOS
 1. Creat a folder i.e ```user@user:~/Desktop/Sorted$``` in you pc where you woul like your donwloads to 
    be saved in.
 2. Inside the ```Sorted``` folder, create 6 new folders: 
-* Images
-* Videos
-* Zipped
-* Docs
-* Undefined
-* Music
+ * Images
+ * Videos
+ * Zipped
+ * Docs
+ * Undefined
+ * Music
 3. Open the project from you IDE.
 4. Change folder paths variable values according to the folders you created from the above procedure.
 5. Run the program
@@ -87,4 +87,4 @@ If you want to contact me you can reach me at:
 
 ## License 📝
 
-This project uses the following license: [MIT](https://github.com/tbm5k/download-manager/LICENSE)
+This project uses the following license: [MIT](https://github.com/tbm5k/download-manager/blob/master/LICENSE)
