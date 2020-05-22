@@ -1,6 +1,7 @@
 # Downloads Manager 🐱‍👤
 
 <!--- These are examples. See https://shields.io for others or to customize this set of shields. You might want to include dependencies, project status and licence info here --->
+![GitHub repo size](https://img.shields.io/github/repo-size/tbm5k/download-manager)
 ![Twitter Follow](https://img.shields.io/twitter/follow/tbm5k?style=social)
 
 Downloads Manger is a tool that allows devs to do have their downloads sorted according to the file type.
