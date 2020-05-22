@@ -1,6 +1,7 @@
 # Downloads Manager 🐱‍👤
 
 <!--- These are examples. See https://shields.io for others or to customize this set of shields. You might want to include dependencies, project status and licence info here --->
+![GitHub repo size](https://img.shields.io/github/repo-size/tbm5k/download-manager)
 ![Twitter Follow](https://img.shields.io/twitter/follow/tbm5k?style=social)
 
 Downloads Manger is a tool that allows devs to do have their downloads sorted according to the file type.
@@ -75,9 +76,7 @@ Alternatively see the GitHub documentation on [creating a pull request](https://
 
 ## Contributors
 
-* [@tbm5k](https://github.com/tbm5k) 👨‍💼
-
-You might want to consider using something like the [All Contributors](https://github.com/all-contributors/all-contributors) specification and its [emoji key](https://allcontributors.org/docs/en/emoji-key).
+* [@tbm5k](https://github.com/tbm5k) 📖
 
 ## Contact📮
 
