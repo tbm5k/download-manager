@@ -20,9 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e19521a-3cc5-4ec7-8518-ee514bbf900d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Download-Manager/com/company/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/DownloadsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/DownloadsManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Download-Manager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Download-Manager.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Download-Manager/com/company/DownloadsManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +56,11 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+    </option>
   </component>
   <component name="RunManager" selected="Application.DownloadsManager">
     <configuration name="DownloadsManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -123,26 +130,30 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="372" y="58" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1366.738@0.0.1366.738" timestamp="1590138823548" />
-    <state width="1325" height="191" key="GridCell.Tab.0.bottom" timestamp="1590077096631">
+    <state width="1325" height="191" key="GridCell.Tab.0.bottom" timestamp="1590141077786">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1325" height="191" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1590077096631" />
-    <state width="1325" height="191" key="GridCell.Tab.0.center" timestamp="1590077096631">
+    <state width="1325" height="191" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1590141077786" />
+    <state width="1325" height="191" key="GridCell.Tab.0.center" timestamp="1590141077786">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1325" height="191" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1590077096631" />
-    <state width="1325" height="191" key="GridCell.Tab.0.left" timestamp="1590077096631">
+    <state width="1325" height="191" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1590141077786" />
+    <state width="1325" height="191" key="GridCell.Tab.0.left" timestamp="1590141077786">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1325" height="191" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1590077096631" />
-    <state width="1325" height="191" key="GridCell.Tab.0.right" timestamp="1590077096631">
+    <state width="1325" height="191" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1590141077786" />
+    <state width="1325" height="191" key="GridCell.Tab.0.right" timestamp="1590141077786">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1325" height="191" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1590077096631" />
+    <state width="1325" height="191" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1590141077786" />
     <state x="163" y="0" key="SettingsEditor" timestamp="1590138396644">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="163" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1590138396644" />
+    <state x="339" y="165" width="672" height="677" key="run.anything.popup" timestamp="1590141043507">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="339" y="165" width="672" height="677" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1590141043507" />
     <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1590138267276">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
