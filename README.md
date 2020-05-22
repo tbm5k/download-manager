@@ -75,9 +75,7 @@ Alternatively see the GitHub documentation on [creating a pull request](https://
 
 ## Contributors
 
-* [@tbm5k](https://github.com/tbm5k) 👨‍💼
-
-You might want to consider using something like the [All Contributors](https://github.com/all-contributors/all-contributors) specification and its [emoji key](https://allcontributors.org/docs/en/emoji-key).
+* [@tbm5k](https://github.com/tbm5k) 📖
 
 ## Contact📮
 
