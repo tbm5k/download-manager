@@ -22,28 +22,45 @@ public class DownloadsManager {
 
     public static void main(String[] args) throws IOException {
 
-        System.out.print(
-                "============================================== \n" +
-                        "LISTING ALL THE FILES \n" +
-                        "============================================== \n");
+        Runnable runnable = new Runnable() {
+            @Override
+            public void run() {
+                System.out.print(
+                        "============================================== \n" +
+                                "LISTING ALL THE FILES \n" +
+                                "============================================== \n");
 
-        while (true) {
-            //Opening the downloads folder and listing all the downloads available
-            File directory = new File(downloadsPath);
-            content = directory.listFiles();
+                while (true) {
+                    //Opening the downloads folder and listing all the downloads available
+                    File directory = new File(downloadsPath);
+                    content = directory.listFiles();
 
-            assert content != null;
-            for (File obj : content) {
-                if (obj.isFile()) {
-                    System.out.format("File name : %s %n", obj.getName());
-                } else if (obj.isDirectory()) {
-                    System.out.format("Directory name : %s %n", obj.getName());
+                    assert content != null;
+                    for (File obj : content) {
+                        if (obj.isFile()) {
+                            System.out.format("File name : %s %n", obj.getName());
+                        } else if (obj.isDirectory()) {
+                            System.out.format("Directory name : %s %n", obj.getName());
+                        }
+                    }
+
+                    //calling this method to sort out the downloads folder
+                    try {
+                        transferDownload();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+
+                    try{
+                        Thread.sleep(5000);
+                    }catch (InterruptedException interruptedException){
+                        System.out.println("Interrrupted exception : " + interruptedException);
+                    }
                 }
             }
-
-            //calling this method to sort out the downloads folder
-            transferDownload();
-        }
+        };
+        Thread thread = new Thread(runnable);
+        thread.start();
     }
 
     //This method checks the file type and returns that value
