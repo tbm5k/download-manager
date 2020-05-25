@@ -13,6 +13,7 @@ This project removes files from your downloads section to a more organised folde
 Before you begin, ensure you have met the following requirements:
 <!--- These are just example requirements. Add, duplicate or remove as required --->
 * You have installed `<JDK 11>` or beyond.
+* Apache Maven
 * Any OS is supported, you just need to do some slight tweeks.
 
 ## Getting Downloads Manager
@@ -29,36 +30,34 @@ git clone <repo_url>
 To use <Downloads Manager>, follow these steps:
 
 Windows: 
-```
+
 1. Creat a folder i.e ```c:\Desktop\Sorted``` in you pc where you woul like your donwloads to 
    be saved in.
 2. Inside the ```Sorted``` folder, create 6 new folders: 
- * Images
- * Videos
- * Zipped
- * Docs
- * Undefined
- * Music
+* Images
+* Videos
+* Zipped
+* Docs
+* Undefined
+* Music
 3. Open the project from you IDE.
 4. Change folder paths variable values according to the folders you created from the above procedure.
 5. Run the program 
-```
+
 
 Linux, macOS
-```
 1. Creat a folder i.e ```user@user:~/Desktop/Sorted$``` in you pc where you woul like your donwloads to 
    be saved in.
 2. Inside the ```Sorted``` folder, create 6 new folders: 
- * Images
- * Videos
- * Zipped
- * Docs
- * Undefined
- * Music
+* Images
+* Videos
+* Zipped
+* Docs
+* Undefined
+* Music
 3. Open the project from you IDE.
 4. Change folder paths variable values according to the folders you created from the above procedure.
 5. Run the program
-```
 
 Add run commands and examples you think users will find useful. Provide an options reference for bonus points!
 
