@@ -41,13 +41,15 @@ public class DownloadsManager {
                 }
             }
 
+            DownloadsManager downloadsManager = new DownloadsManager();
+
             //calling this method to sort out the downloads folder
-            transferDownload();
+            downloadsManager.transferDownload();
         }
     }
 
     //This method checks the file type and returns that value
-    private static String identifyFileType() {
+    public String identifyFileType() {
 
         String fileType = "Undetermined";
 
@@ -79,7 +81,7 @@ public class DownloadsManager {
     }
 
     //this method changes the directory of a file in the downloads folder to the target folder
-    private static void transferDownload() throws IOException {
+    public void transferDownload() throws IOException {
 
         File aFile;
 

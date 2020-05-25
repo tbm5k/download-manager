@@ -20,11 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e19521a-3cc5-4ec7-8518-ee514bbf900d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_0_M1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_0_M1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Download-Manager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Download-Manager.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Download-Manager/com/company/DownloadsManager.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/DownloadsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/DownloadsManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/DownloadsManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/DownloadsManager.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +39,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -51,11 +56,21 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.company" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
@@ -89,9 +104,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DownloadsManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Download-Manager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.DownloadsManagerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.DownloadsManager" />
+        <item itemvalue="JUnit.DownloadsManagerTest" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -130,26 +161,30 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="372" y="58" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1366.738@0.0.1366.738" timestamp="1590138823548" />
-    <state width="1325" height="191" key="GridCell.Tab.0.bottom" timestamp="1590141077786">
+    <state width="1325" height="191" key="GridCell.Tab.0.bottom" timestamp="1590430880716">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1325" height="191" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1590141077786" />
-    <state width="1325" height="191" key="GridCell.Tab.0.center" timestamp="1590141077786">
+    <state width="1325" height="191" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1590430880716" />
+    <state width="1325" height="191" key="GridCell.Tab.0.center" timestamp="1590430880716">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1325" height="191" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1590141077786" />
-    <state width="1325" height="191" key="GridCell.Tab.0.left" timestamp="1590141077786">
+    <state width="1325" height="191" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1590430880716" />
+    <state width="1325" height="191" key="GridCell.Tab.0.left" timestamp="1590430880716">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1325" height="191" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1590141077786" />
-    <state width="1325" height="191" key="GridCell.Tab.0.right" timestamp="1590141077786">
+    <state width="1325" height="191" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1590430880716" />
+    <state width="1325" height="191" key="GridCell.Tab.0.right" timestamp="1590430880716">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1325" height="191" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1590141077786" />
+    <state width="1325" height="191" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1590430880716" />
     <state x="163" y="0" key="SettingsEditor" timestamp="1590138396644">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="163" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1590138396644" />
+    <state x="454" y="191" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1590430367289">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="454" y="191" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.738@0.0.1366.738" timestamp="1590430367289" />
     <state x="339" y="165" width="672" height="677" key="run.anything.popup" timestamp="1590141043507">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
