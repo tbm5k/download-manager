@@ -15,7 +15,6 @@ public class DownloadsManager {
     private static File fileName;
 
     //Folder paths
-    private static final String downloadsPath = "C:\\Users\\tbm5k\\Downloads";
     private static final String imageDes = "C:\\Users\\tbm5k\\Desktop\\Download-Manger-Sorted\\Images\\";
     private static final String videosDes = "C:\\Users\\tbm5k\\Desktop\\Download-Manger-Sorted\\Videos\\";
     private static final String zippedDes = "C:\\Users\\tbm5k\\Desktop\\Download-Manger-Sorted\\Zipped\\";
@@ -24,6 +23,9 @@ public class DownloadsManager {
     private static final String musicDes = "C:\\Users\\tbm5k\\Desktop\\Download-Manger-Sorted\\Music\\";
 
     public static void main(String[] args) throws IOException {
+
+        final PropertiesExtract propertiesExtract = new PropertiesExtract();
+        System.out.println(propertiesExtract.appName().toUpperCase());
 
         Runnable runnable = new Runnable() {
             @Override
@@ -37,7 +39,7 @@ public class DownloadsManager {
                     //Opening the downloads folder and listing all the downloads available
                     File directory = null;
                     try {
-                        directory = new File(properties());
+                        directory = new File(propertiesExtract.downloadsPath());
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
@@ -69,20 +71,6 @@ public class DownloadsManager {
         };
         Thread thread = new Thread(runnable);
         thread.start();
-    }
-
-    public static String properties() throws IOException {
-
-        String rootPath = Thread.currentThread().getContextClassLoader().getResource("").getPath();
-        String propsConfigPath = rootPath + "app.properties";
-
-        Properties appProps = new Properties();
-        appProps.load(new FileInputStream(propsConfigPath));
-
-        String downloadsPath = appProps.getProperty("downloadsPath");
-        //String appName = appProps.getProperty("name");
-
-        return downloadsPath;
     }
 
     //This method checks the file type and returns that value
