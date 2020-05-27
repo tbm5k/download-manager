@@ -19,4 +19,34 @@ public class PropertiesExtract {
         appProperties.load(new FileInputStream(appConfigPath));
         return appProperties.getProperty("downloadsPath");
     }
+
+    public String imgDestination() throws IOException{
+        appProperties.load(new FileInputStream(appConfigPath));
+        return appProperties.getProperty("imageDes");
+    }
+
+    public String videoDestination() throws IOException{
+        appProperties.load(new FileInputStream(appConfigPath));
+        return appProperties.getProperty("videosDes");
+    }
+
+    public String zippedDestination() throws IOException{
+        appProperties.load(new FileInputStream(appConfigPath));
+        return appProperties.getProperty("zippedDes");
+    }
+
+    public String docsDestination() throws IOException{
+        appProperties.load(new FileInputStream(appConfigPath));
+        return appProperties.getProperty("docsDes");
+    }
+
+    public String undefinedDestination() throws IOException{
+        appProperties.load(new FileInputStream(appConfigPath));
+        return appProperties.getProperty("undefDes");
+    }
+
+    public String musicDestination() throws IOException{
+        appProperties.load(new FileInputStream(appConfigPath));
+        return appProperties.getProperty("musicDes");
+    }
 }
