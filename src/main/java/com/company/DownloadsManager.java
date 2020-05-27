@@ -1,10 +1,13 @@
 package com.company;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Objects;
+import java.util.Properties;
 
 public class DownloadsManager {
 
@@ -32,7 +35,12 @@ public class DownloadsManager {
 
                 while (true) {
                     //Opening the downloads folder and listing all the downloads available
-                    File directory = new File(downloadsPath);
+                    File directory = null;
+                    try {
+                        directory = new File(properties());
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                     content = directory.listFiles();
 
                     assert content != null;
@@ -54,13 +62,27 @@ public class DownloadsManager {
                     try{
                         Thread.sleep(5000);
                     }catch (InterruptedException interruptedException){
-                        System.out.println("Interrrupted exception : " + interruptedException);
+                        System.out.println("Interrupted exception : " + interruptedException);
                     }
                 }
             }
         };
         Thread thread = new Thread(runnable);
         thread.start();
+    }
+
+    public static String properties() throws IOException {
+
+        String rootPath = Thread.currentThread().getContextClassLoader().getResource("").getPath();
+        String propsConfigPath = rootPath + "app.properties";
+
+        Properties appProps = new Properties();
+        appProps.load(new FileInputStream(propsConfigPath));
+
+        String downloadsPath = appProps.getProperty("downloadsPath");
+        //String appName = appProps.getProperty("name");
+
+        return downloadsPath;
     }
 
     //This method checks the file type and returns that value
