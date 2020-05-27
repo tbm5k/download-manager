@@ -1,31 +1,21 @@
 package com.company;
 
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Objects;
-import java.util.Properties;
 
 public class DownloadsManager {
 
     private static File[] content;
     private static File fileName;
 
-    //Folder paths
-    private static final String imageDes = "C:\\Users\\tbm5k\\Desktop\\Download-Manger-Sorted\\Images\\";
-    private static final String videosDes = "C:\\Users\\tbm5k\\Desktop\\Download-Manger-Sorted\\Videos\\";
-    private static final String zippedDes = "C:\\Users\\tbm5k\\Desktop\\Download-Manger-Sorted\\Zipped\\";
-    private static final String docsDes = "C:\\Users\\tbm5k\\Desktop\\Download-Manger-Sorted\\Docs\\";
-    private static final String undefDes = "C:\\Users\\tbm5k\\Desktop\\Download-Manger-Sorted\\Undefined\\";
-    private static final String musicDes = "C:\\Users\\tbm5k\\Desktop\\Download-Manger-Sorted\\Music\\";
+    static PropertiesExtract extract = new PropertiesExtract();
 
     public static void main(String[] args) throws IOException {
 
-        final PropertiesExtract propertiesExtract = new PropertiesExtract();
-        System.out.println(propertiesExtract.appName().toUpperCase());
+        System.out.println(extract.appName().toUpperCase());
 
         Runnable runnable = new Runnable() {
             @Override
@@ -39,7 +29,7 @@ public class DownloadsManager {
                     //Opening the downloads folder and listing all the downloads available
                     File directory = null;
                     try {
-                        directory = new File(propertiesExtract.downloadsPath());
+                        directory = new File(extract.downloadsPath());
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
@@ -107,6 +97,15 @@ public class DownloadsManager {
 
     //this method changes the directory of a file in the downloads folder to the target folder
     private static void transferDownload() throws IOException {
+
+
+        //Folder paths
+        final String imageDes = extract.imgDestination();
+        final String videosDes = extract.videoDestination();
+        final String zippedDes = extract.zippedDestination();
+        final String docsDes = extract.docsDestination();
+        final String undefDes = extract.undefinedDestination();
+        final String musicDes = extract.musicDestination();
 
         File aFile;
 
