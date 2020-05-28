@@ -14,7 +14,7 @@ Before you begin, ensure you have met the following requirements:
 <!--- These are just example requirements. Add, duplicate or remove as required --->
 * You have installed `<JDK 11>` or beyond.
 * Apache Maven
-* Any OS is supported, you just need to do some slight tweeks.
+* Any OS is supported, you just need to do some slight tweaks.
 
 ## Getting Downloads Manager
 
@@ -31,7 +31,7 @@ To use <Downloads Manager>, follow these steps:
 
 Windows: 
 
-1. Creat a folder i.e ```c:\Desktop\Sorted``` in you pc where you woul like your donwloads to 
+1. Create a folder i.e ```c:\Desktop\Sorted``` in you pc where you would like your downloads to 
    be saved in.
 2. Inside the ```Sorted``` folder, create 6 new folders: 
 * Images
@@ -41,12 +41,12 @@ Windows:
 * Undefined
 * Music
 3. Open the project from you IDE.
-4. Change folder paths variable values according to the folders you created from the above procedure.
+4. Change folder paths in the app.properties file
 5. Run the program 
 
 
 Linux, macOS
-1. Creat a folder i.e ```user@user:~/Desktop/Sorted$``` in you pc where you woul like your donwloads to 
+1. Create a folder i.e ```user@user:~/Desktop/Sorted$``` in you pc where you would like your downloads to 
    be saved in.
 2. Inside the ```Sorted``` folder, create 6 new folders: 
 * Images
@@ -56,8 +56,8 @@ Linux, macOS
 * Undefined
 * Music
 3. Open the project from you IDE.
-4. Change folder paths variable values according to the folders you created from the above procedure.
-5. Run the program
+4. Change folder paths in the app.properties file.
+5. Run the program.
 
 Add run commands and examples you think users will find useful. Provide an options reference for bonus points!
 
